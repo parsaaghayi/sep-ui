@@ -1,0 +1,36 @@
+{
+  "name": "@parsaaghayi/sep-ui",
+  "version": "1.0.0",
+  "description": "This a React UI kit for Hooshmand Sepehr company",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"rmdir /s dist && npm run build:esm && npm run build:cjs",
+    "build:esm":"npx tsc",
+    "build:cjs":"npx tsc --module CommonJS --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parsaaghayi/sep-ui.git"
+  },
+  "author": "parsa aghayi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parsaaghayi/sep-ui/issues"
+  },
+  "homepage": "https://github.com/parsaaghayi/sep-ui#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
